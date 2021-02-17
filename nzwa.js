@@ -66,7 +66,10 @@ const { eng } = require('./options/language')
 const {
     botName,
     ownerName,
+    apivhtear,
     BarBarKey,
+    shizukaapi,
+    TobzKey,
     ownerNumbers,
     languages,
     botPrefix,
