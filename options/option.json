@@ -1,13 +1,10 @@
 {
     "botName": "BOT_NAME",
     "ownerName": "OWNER_NAME",
-    "apivhtear": "BotWeA",
     "BarBarKey": "IDxO1TFYnKADlX4pxcHa",
-    "shizukaapi": "itsmeiky633",
-    "TobzKey": "BotWeA"
     "ownerNumbers": "628885xxxxxx@s.whatsapp.net",
     "languages": "ind",
     "botPrefix": ".",
-    "memberLimitss": "1",
+    "memberLimitss": "25",
     "userDefaultLimit": "30"
 }
