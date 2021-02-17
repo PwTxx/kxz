@@ -12,7 +12,7 @@ const help = (pushname, prefix, botName, ownerName, reqXp, uangku) => {
 ┯┷ *〈 BOT INFO 〉*
 ╽
 ┠≽ *Prefix* : 「  ${prefix}  」
-┠≽ *Creator* : ${ownerName}
+┠≽ *Criador* : ${ownerName}
 ┠≽ *Version* : 0.0.5
 ╿
 ┷┯ *〈 MENU 〉*
