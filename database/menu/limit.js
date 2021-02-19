@@ -2,25 +2,28 @@ const limit = (prefix, botName, ownerName) => {
         return `
 ┏ *〈 ${botName} 〉*
 ╿
-┷┯ *〈 BOT INFO 〉*
+┯ *〈 INFO DO BOT 〉*
    ╽
    ┠≽ *Prefix* : 「  ${prefix}  」
-   ┠≽ *Creator* : ${ownerName}
-   ┠≽ *Version* : 0.0.5
+   ┠≽ *Criador* : ${ownerName}
+   ┠≽ *Versão* : 0.0.5
    ╿
-┯┷ *〈 ABOUT 〉*
+┯┷ *〈 INFO 〉*
 ╽
 ┠≽ *${prefix}info* (error)
-┃ *Desc* : Show Bot Details
+┃ *Desc* : Mostrar detalhes do bot
 ┠──────────────╼
 ┠≽ *${prefix}blocklist*
-┃ *Desc* : Show Blocked User
+┃ *Desc* : Mostrar usuário bloqueado
 ┠──────────────╼
 ┠≽ *${prefix}chatlist* (error)
-┃ *Desc* : Show All Chat User
+┃ *Desc* : Mostrar todos os usuários de bate-papo
 ┠──────────────╼
 ┠≽ *${prefix}ping*
-┃ *Desc* : Show Connection Bot Speed
+┃ *Desc* : Mostrar velocidade do bot de conexão
+┠──────────────╼
+┠≽ *${prefix}bugreport* <text>
+┃ *Desc* : Report Bug To Owner Bot
 ┠──────────────╼
 ┠≽ *${prefix}bugreport* <text>
 ┃ *Desc* : Report Bug To Owner Bot
@@ -38,7 +41,7 @@ const limit = (prefix, botName, ownerName) => {
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}
 --------------------------------
-Note: Kamu bisa membeli limit dengan cara mengumpulkan uang terlebih dahulu. Cek uang kamu dengan cara mengetikan perintah *${prefix}bal* , harga 1 limit = 1000 uang.
-Note2: Kamu bisa mengumpulkan uang dengan cara chat dengan teman segroup atau bisa dengan naik level.`
+Note: Você pode comprar limites recolhendo dinheiro primeiro. Verifique seu dinheiro digitando comandos *${prefix}saldo* , 1 preço limite = 1000 dinheiro.
+Note2: Você pode coletar dinheiro conversando com amigos do grupo ou subindo de nível.`
 }
 exports.limit = limit

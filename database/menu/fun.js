@@ -2,25 +2,25 @@ const fun = (prefix, botName, ownerName) => {
         return `
 ┏ *〈 ${botName} 〉*
 ╿
-┷┯ *〈 BOT INFO 〉*
+┯ *〈 INFO DO BOT 〉*
    ╽
    ┠≽ *Prefix* : 「  ${prefix}  」
-   ┠≽ *Creator* : ${ownerName}
-   ┠≽ *Version* : 0.0.5
+   ┠≽ *Criador* : ${ownerName}
+   ┠≽ *Versão* : 0.0.5
    ╿
-┯┷ *〈 ABOUT 〉*
+┯┷ *〈 INFO 〉*
 ╽
 ┠≽ *${prefix}info* (error)
-┃ *Desc* : Show Bot Details
+┃ *Desc* : Mostrar detalhes do bot
 ┠──────────────╼
 ┠≽ *${prefix}blocklist*
-┃ *Desc* : Show Blocked User
+┃ *Desc* : Mostrar usuário bloqueado
 ┠──────────────╼
 ┠≽ *${prefix}chatlist* (error)
-┃ *Desc* : Show All Chat User
+┃ *Desc* : Mostrar todos os usuários de bate-papo
 ┠──────────────╼
 ┠≽ *${prefix}ping*
-┃ *Desc* : Show Connection Bot Speed
+┃ *Desc* : Mostrar velocidade do bot de conexão
 ┠──────────────╼
 ┠≽ *${prefix}bugreport* <text>
 ┃ *Desc* : Report Bug To Owner Bot

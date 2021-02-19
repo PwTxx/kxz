@@ -2,57 +2,72 @@ const wibu = (prefix, botName, ownerName) => {
         return `
 ┏ *〈 ${botName} 〉*
 ╿
-┷┯ *〈 BOT INFO 〉*
+┷┯ *〈 INFO DO BOT 〉*
    ╽
    ┠≽ *Prefix* : 「  ${prefix}  」
-   ┠≽ *Creator* : ${ownerName}
-   ┠≽ *Version* : 0.0.5
+   ┠≽ *Criador* : ${ownerName}
+   ┠≽ *Versão* : 0.0.5
    ╿
-┯┷ *〈 ABOUT 〉*
+┯┷ *〈 INFO 〉*
 ╽
 ┠≽ *${prefix}info* (error)
-┃ *Desc* : Show Bot Details
+┃ *Desc* : Mostrar detalhes do bot
 ┠──────────────╼
 ┠≽ *${prefix}blocklist*
-┃ *Desc* : Show Blocked User
+┃ *Desc* : Mostrar usuário bloqueado
 ┠──────────────╼
 ┠≽ *${prefix}chatlist* (error)
-┃ *Desc* : Show All Chat User
+┃ *Desc* : Mostrar todos os usuários de bate-papo
 ┠──────────────╼
 ┠≽ *${prefix}ping*
-┃ *Desc* : Show Connection Bot Speed
+┃ *Desc* : Mostrar velocidade do bot de conexão
 ┠──────────────╼
 ┠≽ *${prefix}bugreport* <text>
 ┃ *Desc* : Report Bug To Owner Bot
 ╿
-┷┯ *〈 WEEBOO 〉*
+┷┯ *〈 ANIME & ANIMAL 〉*
    ╽
    ┠≽ *${prefix}neonime*
-   ┃ *Desc* : Search Neonime
+   ┃ *Desc* : Pesquisar Neonime
    ┠──────────────╼
    ┠≽ *${prefix}pokemon*
-   ┃ *Desc* : Random Pokemon Image
+   ┃ *Desc* : Imagem aleatória de Pokémon
+   ┠──────────────╼
+   ┠≽ *${prefix}naruto*
+   ┃ *Desc* : Imagem Aleatória de Naruto
+   ┠──────────────╼
+   ┠≽ *${prefix}dog*
+   ┃ *Desc* : Imagem Aleatória de Cachorro
+   ┠──────────────╼
+   ┠≽ *${prefix}hinata*
+   ┃ *Desc* : Imagem Aleatória de Hinata
    ┠──────────────╼
    ┠≽ *${prefix}loli*
-   ┃ *Desc* : Random Loli Image
+   ┃ *Desc* : Imagem Aleatória de Loli
+   ┠──────────────╼
+   ┠≽ *${prefix}sakura*
+   ┃ *Desc* : Imagem aleatória de Sakura
+   ┠──────────────╼
+   ┠≽ *${prefix}boruto*
+   ┃ *Desc* : Imagem aleatória de Boruto
    ┠──────────────╼
    ┠≽ *${prefix}waifu*
-   ┃ *Desc* : Random Waifu Image
+   ┃ *Desc* : Imagem Aleatória De Waifu
    ┠──────────────╼
    ┠≽ *${prefix}randomanime*
-   ┃ *Desc* : Random Anime Image
+   ┃ *Desc* : Imagem Aleatória De Waifu
    ┠──────────────╼
    ┠≽ *${prefix}husbu*
-   ┃ *Desc* : Random Husbu Image
+   ┃ *Desc* : Imagem Aleatória De Husbu
    ┠──────────────╼
    ┠≽ *${prefix}husbu2*
-   ┃ *Desc* : Random Husbu2 Image
+   ┃ *Desc* : Imagem Aleatória De Husbu2
    ┠──────────────╼
    ┠≽ *${prefix}wait*
-   ┃ *Desc* : Send Anime Name & Short Scene
+   ┃ *Desc* : Enviar nome do anime e cena curta
    ┠──────────────╼
    ┠≽ *${prefix}nekonime*
-   ┃ *Desc* : Random Nekonime Image
+   ┃ *Desc* : Imagen Aleatória De Nekoanime
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}`
 }
