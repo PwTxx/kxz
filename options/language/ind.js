@@ -39,7 +39,7 @@ exports.ownerG = () => {
 }
 
 exports.ownerB = () => {
-        return `[❗] Este comando só pode ser usado pelo proprietário do bot! ❌`
+        return `[❗] ESSA É BOA USUÁRIO COMUM TENTANDO USAR COMANDO DO MEU DONO GOSTOSO🤡🤬🤬! ❌`
 }
 
 exports.admin = () => {
