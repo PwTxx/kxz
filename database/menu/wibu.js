@@ -39,6 +39,9 @@ const wibu = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}dog*
    ┃ *Desc* : Imagem Aleatória de Cachorro
    ┠──────────────╼
+   ┠≽ *${prefix}animekiss*
+   ┃ *Desc* : Imagem Aleatória de Cachorro
+   ┠──────────────╼
    ┠≽ *${prefix}hinata*
    ┃ *Desc* : Imagem Aleatória de Hinata
    ┠──────────────╼
