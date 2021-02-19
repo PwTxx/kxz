@@ -582,20 +582,27 @@ async function starts() {
                      // Load Commands
 			switch(command) {
                                 case 'help':
+                                case 'menu':
+                                case 'cmd':
+                                case 'ajuda':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         const reqXp  = 5000 * (Math.pow(2, getLevelingLevel(sender)) - 1)
 			                const uangku = checkATMuser(sender)
                                         await costum(help(pushname, prefix, botName, ownerName, reqXp, uangku), text, tescuk, cr)
                                         break
                                 case '18+menu':
+                                case 'adultomenu':
+                                case '+18menu':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(adult(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'downloadermenu':
+                                case 'downloadmenu':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(downloader(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'educationmenu':
+                                case 'edmenu':                       
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await cost(education(prefix, botName, ownerName), text, tescuk, cr)
                                         break
@@ -604,6 +611,7 @@ async function starts() {
                                         await costum(fun(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'groupmenu':
+                                case 'grupomenu':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(group(prefix, botName, ownerName), text, tescuk, cr)
                                         break
@@ -612,6 +620,7 @@ async function starts() {
                                         await costum(imagemaker(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'informationmenu':
+                                case 'infomenu':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(information(prefix, botName, ownerName), text, tescuk, cr)
                                         break
@@ -632,35 +641,49 @@ async function starts() {
                                         await costum(meme(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'musicmenu':
+                                case 'musicamenu':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(music(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'othermenu':
+                                case 'outromenu':
+                                case 'outro':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(other(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'ownermenu':
+                                case 'donomenu':
+                                case 'dono':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(owner(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'searchmenu':
+                                case 'procurarmenu':
+                                case 'procurar':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(search(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'soundmenu':
+                                case 'sommemu':
+                                case 'som':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(sound(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'stalkmenu':
+                                case 'stalk':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(stalk(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'stayonscreenmenu':
+                                case 'ficarnatela':
+                                case 'tela':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(stayonscreen(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'stickermakermenu':
                                 case 'stikermakermenu':
+                                case 'stickermenu':
+                                case 'smenu':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(stickermaker(prefix, botName, ownerName), text, tescuk, cr)
                                         break
@@ -669,6 +692,9 @@ async function starts() {
                                         await costum(tod(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'wibumenu':
+                                case 'animemenu':
+                                case 'animenu':
+                                case 'amenu':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(wibu(prefix, botName, ownerName), text, tescuk, cr)
                                         break
@@ -677,6 +703,7 @@ async function starts() {
                                         await costum(xp(prefix, botName, ownerName), text, tescuk, cr)
                                         break
                                 case 'limitmenu':
+                                case 'limitemenu':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         await costum(limit(prefix, botName, ownerName), text, tescuk, cr)
                                         break 
@@ -690,15 +717,23 @@ async function starts() {
 				}, timer)
 				break
                 case 'bahasa':
+                case 'lingua':
+                case 'cdidioma':
 		nzwa.sendMessage(from, bahasa(prefix, sender), text, {quoted: mek})
                 break
                case 'virtex':
+               case 'trava':
                nzwa.sendMessage(from, virtex(prefix, sender), text, {quoted: mek})
                break
                case 'kodenegara':
+               case 'codigodopaís':
+               case 'codicodopais':
+               case 'cdpaís':
                nzwa.sendMessage(from, negara(prefix, sender), text, {quoted: mek})
                break
 				case 'demote':
+				case 'demitir':
+				case 'rebaixar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -732,11 +767,12 @@ async function starts() {
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
                                         reply(mess.wait)
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=BotWeA`, {method: 'get'})
-                                        buffer = await getBuffer(shizuka.result)
-                                        nzwa.sendMessage(from, shizukaa, image, {quoted: mek})
+                                        buffer = await getBuffer(anu.result)
+                                        nzwa.sendMessage(from, buffer, image, {quoted: mek})
                                         await limitAdd(sender)
                                         break
                   case 'promote':
+                  case 'promover':
 					nzwa.updatePresence(from, Presence.composing) 
                                         if (!isRegister) return reply(mess.only.daftarB)
 					if (!isGroup) return reply(mess.only.group)
@@ -794,6 +830,7 @@ async function starts() {
                 break
               case 'owner':
                 case 'creator':
+                case 'dono':
                   nzwa.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
                nzwa.sendMessage(from, 'Nih nomor ownerku kak, save ya kak nanti di save balik',MessageType.text, { quoted: mek} )
                 break
@@ -877,6 +914,7 @@ async function starts() {
                 await limitAdd(sender)
                 break
                    case 'map':
+                   case 'mapa':
                    data = await fetchJson(`https://mnazria.herokuapp.com/api/maps?search=${body.slice(5)}`)
                    if (!isRegister) return reply(mess.only.daftarB)
                    if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -885,6 +923,7 @@ async function starts() {
                    await limitAdd(sender)
                    break
                    case 'covidcountry':
+                   case 'covidpaís':
                    nzwa.updatePresence(from, Presence.composing) 
                    if (!isRegister) return reply(mess.only.daftarB)
                    if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -917,7 +956,7 @@ async function starts() {
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
-					anu = await fetchJson(`https://ohto-ai.herokuapp.com/ytmus?URL=${args[0]}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/yta?url=${args[0]}&apiKey=${BarBarKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = `â *Title* : ${anu.title}\nâ *Filesize* : ${anu.filesize}\n\nTunggu Bentar Ya Kak, Audionya Lagi Di Kirim...`
 					thumb = await getBuffer(anu.thumb)
@@ -931,9 +970,9 @@ async function starts() {
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
-					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/ytv?url=${args[0]}&apiKey=${BarBarKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*Title* : ${anu.title}`
+					teks = `â *Title* : ${anu.title} \nâ *Size* : ${anu.filesize} \nâ *Desc* : ${anu.desc} \n\n*VIDEO SEDANG DIKIRIMKAN, JANGAN SPAM YA SAYANG...*`
 					thumb = await getBuffer(anu.thumb)
 					nzwa.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
@@ -981,15 +1020,17 @@ async function starts() {
 					break*/
 				case 'nulis':
 				case 'tulis':
-					if (args.length < 1) return reply('Yang mau di tulis apaan?')
-                                        if (!isRegister) return reply(mess.only.daftarB)
-                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
-					teks = body.slice(7)
-					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbar.tech/nulis?text=${teks}&apiKey=${BarBarKey}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					buff = await getBuffer(anu.result)
-					nzwa.sendMessage(from, buff, image, {quoted: mek, caption: ind.success()})
+				client.updatePresence(from, Presence.composing)
+                 if (!isRegister) return reply(mess.only.daftarB)
+                 if (isLimit(sender)) return reply(ind.limitend(pusname))
+                  if (args.length < 1) return reply(`${name} Harus Nulis Apa Kak??`)
+					reply(ind.wait)
+					tulis = body.slice(7)
+				  nama = tulis.split("/")[0];
+					kelas = tulis.split("/")[1];
+					isi = tulis.split("/")[2];
+					nulis = await fetchJson(`https://api.zeks.xyz/api/magernulis?nama=${nama}&kelas=${kelas}&text=${isi}&tinta=4`, {method: 'get'})
+					nzwa.sendMessage(from, nulis, image, {quoted: mek})
                                         await limitAdd(sender)
 					break
 	case 'kbbi':
@@ -1166,6 +1207,7 @@ async function starts() {
 					reply(anu.result)
 					break
 				case 'tagall':
+				case 'marcar':
 				        nzwa.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
                                         if (!isRegister) return reply(mess.only.daftarB)
@@ -1180,6 +1222,7 @@ async function starts() {
 					mentions('â•”â•â•âœªã€˜ Mention All ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - ã€™', members_id, true)
 					break
                 case 'tagall2':
+                case 'marcar2':
 				nzwa.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1193,6 +1236,7 @@ async function starts() {
 					nzwa.sendMessage(from, 'â•”â•â•âœªã€˜ Mention All ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - ã€™', text, {quoted: mek})
 					break
                 case 'tagall3':
+                case 'marcar3':
 				nzwa.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1206,6 +1250,7 @@ async function starts() {
 					nzwa.sendMessage(from, 'â•”â•â•âœªã€˜ Mention All ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - - ã€™', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
+                        case 'marcar4':
 				nzwa.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1219,6 +1264,7 @@ async function starts() {
 					nzwa.sendMessage(from, 'â•”â•â•âœªã€˜ Mention All ã€™âœªâ•â•\nâ• âž¥'+teks+'â•šâ•ã€˜ - - - - - ã€™', text, {quoted: mek})
 					break
                 case 'tagall5':
+                case 'marcar5':
 				nzwa.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1364,6 +1410,7 @@ async function starts() {
                                         break
                     case 'ownergrup':
 				  case 'ownergroup':
+				case 'donogrupo':
                nzwa.updatePresence(from, Presence.composing) 
               options = {
           text: `Owner Group ini adalah : @${from.split("-")[0]}`,
@@ -1387,12 +1434,10 @@ async function starts() {
 				case 'neko':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
-					gatauda = body.slice(6)
-					reply(mess.wait)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=BotWeA`, {method: 'get'})
+					res = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=${TobzKey}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					nzwa.sendMessage(from, buffer, image, {quoted: mek})
-                                        await limitAdd(sender)
+                    await limitAdd(sender)
 					break	
 				case 'add':
 					nzwa.updatePresence(from, Presence.composing) 
@@ -1411,6 +1456,7 @@ async function starts() {
 					break
 
 				case 'kick':
+				case 'banir':
 					nzwa.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1522,6 +1568,7 @@ async function starts() {
               reply(hasil)
                 break
 			case 'closegc':
+			case 'fechargp':
 					nzwa.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1536,6 +1583,7 @@ async function starts() {
 					break
                 case 'opengc':
                 case 'bukagc':
+                case 'abrirgp':
 					nzwa.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -1548,6 +1596,7 @@ async function starts() {
 					nzwa.sendMessage(from, open, text, {quoted: mek})
 					break
 				case 'stiker':
+				case 's':
 				case 'sticker':
 				case 'stickergif':
 				case 'stikergif':
@@ -1666,18 +1715,23 @@ async function starts() {
                       nzwa.sendMessage(from, buff, image, {quoted: mek})
                       await limitAdd(sender)
                       break
-                     case 'play':   
+                         case 'play':   
+	          if (!isRegister) return reply(mess.only.daftarB)
+                  if (isLimit(sender)) return reply(ind.limitend(pusname))
                 reply(mess.wait)
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
                if (anu.error) return reply(anu.error)
-                 infomp3 = `*Musica Encontrada!!!*\nTitulo : ${anu.result.title}\nFonte : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*espere a música enviar mn se não for conte até mil e tente novamente, NAO ENVIE SPAM *`
+                 infomp3 = `*Lagu Ditemukan!!!*\nJudul : ${anu.result.title}\nSource : ${anu.result.source}\nUkuran : ${anu.result.size}\n\n*TUNGGU SEBENTAR LAGI DIKIRIM MOHON JANGAN SPAM YA SAYANG*`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
-                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
-      break
+                nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                nzwa.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
+                await limitAdd(sender)
+                break
                      case 'infocuaca':
+                     case 'infocidade':
+                     case 'infoclima':
                    tels = body.slice(11)
                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cuaca?wilayah=${tels}&apikey=BotWeA`, {method: 'get'})
                    if (!isRegister) return reply(mess.only.daftarB)
@@ -1707,6 +1761,9 @@ async function starts() {
 					}, 0) // 1000 = 1s,
 					break
                                 case 'welcome':
+                                case 'bv':
+                                case 'boasvidas':
+                                case 'bemvindo':
 					if (!isGroup) return reply(mess.only.group)
                                         if (!isRegister) return reply(mess.only.daftarB)
 					if (!isGroupAdmins) return reply(mess.only.Badmin)
@@ -1863,21 +1920,20 @@ async function starts() {
                                         await limitAdd(sender)
 					break
 				case 'randomanime':
-					gatauda = body.slice(13)
-					reply(mess.wait)
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=BotWeA`, {method: 'get'})
+                                            gatauda = body.slice(8)
+					                        reply(ind.wait())
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=${TobzKey}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					nzwa.sendMessage(from, buffer, image, {quoted: mek})
-                                        await limitAdd(sender)
+                    await limitAdd(sender)
 					break						
                                 case 'husbu':
-                                        gatauda = body.slice(13)
-					reply(mess.wait)
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
-					anu = await fetchJson(`https://api-shizuka.herokuapp.com/husbu?apikey=${shizukaapi}`)
+					res = await fetchJson(`https://tobz-api.herokuapp.com/api/husbu?apikey=${TobzKey}`)
+					reply(ind.wait())
 					buffer = await getBuffer(anu.result)
 					nzwa.sendMessage(from, buffer, image, {quoted: mek})
                                         await limitAdd(sender)
@@ -1907,6 +1963,7 @@ async function starts() {
 					break	
                                 case 'delete':
 					case 'del':
+					case 'd':
 					if (!isGroup)return reply(mess.only.group)
                                         if (!isRegister) return reply(mess.only.daftarB)
 					if (!isGroupAdmins)return reply(mess.only.admin)
@@ -1938,6 +1995,7 @@ async function starts() {
 					nzwa.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
 					break	
                 case 'level':
+                case 'nivel':
                 if (!isLevelingOn) return reply(mess.levelnoton)
                 if (!isGroup) return reply(mess.only.group)
                 const userLevel = getLevelingLevel(sender)
@@ -2371,11 +2429,13 @@ async function starts() {
                                         await limitAdd(sender)
                                         break
                                 case 'bal':
+                                case 'saldo':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         const kantong = checkATMuser(sender)
                                         reply(ind.uangkau(pushname, sender, kantong))
                                         break
                                 case 'buylimit':
+                                case 'comprarl':
                                         if (args.length < 1) return reply('Berapa limit yang mau di beli kak? Pastiin uang kakak cukup juga kak! \n\nCara cek uang: ${prefix}bal')
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         payout = body.slice(10)
@@ -2389,10 +2449,12 @@ async function starts() {
                                         }
                                         break
                                 case 'limit':
+                                case 'limite':
                                         if (!isRegister) return reply(mess.only.daftarB)
                                         checkLimit(sender)
                                         break
                                 case 'event':
+                                case 'evento':
                                         if (!isGroup) return reply(mess.only.group)
                                         if (!isOwner) return reply(ind.ownerB())
                                         if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
@@ -2410,6 +2472,8 @@ async function starts() {
                                         }
                                         break
                                 case 'register':
+                                case 'registrar':
+                                case 'cadastrar':
                                         if (isRegister) return  reply(ind.rediregis())
                                         if (!q.includes('|')) return  reply(ind.wrongf())
                                         const namaUser = q.substring(0, q.indexOf('|') - 0)
@@ -2458,6 +2522,7 @@ async function starts() {
                                         nzwa.sendMessage(from, 'Succes, Ganti Nama Grup', text, {quoted: mek})
 				        break
                                 case 'setdesc':
+                                case 'mudardesc':
                                         if (!isGroup) return reply(ind.groupo())
 			                if (!isGroupAdmins) return reply(mess.only.admin)
 			         	if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -2536,6 +2601,7 @@ async function starts() {
                                         nzwa.sendMessage(from, saying, text)
                                         break
                                 case 'antilinkgroup':
+                                case 'antilinkgrupo':
                                 	if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
