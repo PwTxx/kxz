@@ -29,8 +29,8 @@ const other = (prefix, botName, ownerName) => {
    ╽
    ┠≽ *${prefix}send*
    ┠≽ *${prefix}wame*
-   ┠≽ *${prefix}virtex*
-   ┠≽ *${prefix}qrcode* <text>
+   ┠≽ *${prefix}trava*
+   ┠≽ *${prefix}qrcode* <texto>
    ┠≽ *${prefix}timer*
    ┠≽ *${prefix}fml*
    ┠≽ *${prefix}fml2*

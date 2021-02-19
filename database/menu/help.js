@@ -2,43 +2,37 @@ const help = (pushname, prefix, botName, ownerName, reqXp, uangku) => {
         return `
 ┏ *〈 ${botName} 〉*
 ╿
-┷┯ *〈 USER INFO 〉*
+┷┯ *〈 INFO DO USUÁRIO 〉*
    ╽
    ┠≽ *Nome* : ${pushname}
    ┠≽ *XP* : ${reqXp}
    ┠≽ *Money* : ${uangku}
-   ┠≽ *Registered : ✔️
+   ┠≽ *Registrado : ✔️
    ╿
 ┯┷ *〈 BOT INFO 〉*
 ╽
 ┠≽ *Prefix* : 「  ${prefix}  」
 ┠≽ *Criador* : ${ownerName}
-┠≽ *Version* : 0.0.5
+┠≽ *Versão* : 0.0.5
 ╿
 ┷┯ *〈 MENU 〉*
-   ┠≽ *${prefix}logomakermenu*
-   ┠≽ *${prefix}imagemakermenu*
-   ┠≽ *${prefix}stickermakermenu*
-   ┠≽ *${prefix}searchmenu*
+   ┠≽ *${prefix}stickermenu*
+   ┠≽ *${prefix}procurarmenu*
    ┠≽ *${prefix}educationmenu*
-   ┠≽ *${prefix}kerangmenu*
-   ┠≽ *${prefix}downloadermenu*
+   ┠≽ *${prefix}downloadmenu*
    ┠≽ *${prefix}mememenu*
-   ┠≽ *${prefix}groupmenu*
-   ┠≽ *${prefix}soundmenu*
-   ┠≽ *${prefix}musicmenu*
-   ┠≽ *${prefix}islammenu*
+   ┠≽ *${prefix}grupomenu*
+   ┠≽ *${prefix}sommenu*
+   ┠≽ *${prefix}musicamenu*
    ┠≽ *${prefix}stalkmenu*
-   ┠≽ *${prefix}wibumenu*
-   ┠≽ *${prefix}18+menu*
+   ┠≽ *${prefix}animemenu*
+   ┠≽ *${prefix}+18menu*
    ┠≽ *${prefix}funmenu*
-   ┠≽ *${prefix}todmenu*
-   ┠≽ *${prefix}informationmenu*
-   ┠≽ *${prefix}stayonscreenmenu*
+   ┠≽ *${prefix}infomenu*
    ┠≽ *${prefix}xpmenu*
-   ┠≽ *${prefix}limitmenu*
-   ┠≽ *${prefix}ownermenu*
-   ┠≽ *${prefix}othermenu*
+   ┠≽ *${prefix}limitemenu*
+   ┠≽ *${prefix}donomenu*
+   ┠≽ *${prefix}outromenu*
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}`
 }

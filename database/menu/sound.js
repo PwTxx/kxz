@@ -25,10 +25,10 @@ const sound = (prefix, botName, ownerName) => {
 ┠≽ *${prefix}bugreport* <text>
 ┃ *Desc* : Report Bug To Owner Bot
 ╿
-┷┯ *〈 TEXT TO SPEACH 〉*
+┷┯ *〈 VOZ DO GOOGLE 〉*
    ╽
-   ┠≽ *${prefix}tts* <language code|text>
-   ┃ *Desc* : Google Text To Speach
+   ┠≽ *${prefix}tts* <código de linguagem|texto>
+   ┃ *Desc* : Texto para voz do Google
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}`
 }

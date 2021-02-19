@@ -28,22 +28,22 @@ const owner = (prefix, botName, ownerName) => {
 ┷┯ *〈 OWNER 〉*
    ╽
    ┠≽ *${prefix}setprefix* <text/optional>
-   ┃ *Desc* : Replace Prefix
+   ┃ *Desc* : Substituir Prefixo
    ┠──────────────╼
    ┠≽ *${prefix}block* <@tag>
-   ┃ *Desc* : Block User
+   ┃ *Desc* : Bloquear usuário
    ┠──────────────╼
    ┠≽ *${prefix}unblock* <@tag>
-   ┃ *Desc* : Unblock User
+   ┃ *Desc* : Desbloquear usuário
    ┠──────────────╼
    ┠≽ *${prefix}bc* <text>
-   ┃ *Desc* : Broadcast to All Contact & Group
+   ┃ *Desc* : Transmitir para todos os contatos e grupos
    ┠──────────────╼
    ┠≽ *${prefix}clone* <@tag>
-   ┃ *Desc* : Clone Profile From Other Members
+   ┃ *Desc* : Clonar perfil de outros membros
    ┠──────────────╼
    ┠≽ *${prefix}clearall
-   ┃ *Desc* : Clear All Chat
+   ┃ *Desc* : Limpar todo o bate-papo
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}`
 }

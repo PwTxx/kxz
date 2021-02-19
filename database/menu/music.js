@@ -27,17 +27,17 @@ const music = (prefix, botName, ownerName) => {
 ╿
 ┷┯ *〈 MUSIC 〉*
    ╽
-   ┠≽ *${prefix}play* <music_name>
-   ┃ *Desc* : Play Music Audio
+   ┠≽ *${prefix}play* <nome da música>
+   ┃ *Desc* : Tocar música de áudio
    ┠──────────────╼
-   ┠≽ *${prefix}joox* <music_name>
-   ┃ *Desc* : Play Music Joox
+   ┠≽ *${prefix}joox* <nome da música>
+   ┃ *Desc* : Tocar música Joox
    ┠──────────────╼
-   ┠≽ *${prefix}lirik* <music_name>
-   ┃ *Desc* : Search Music Lyrics
+   ┠≽ *${prefix}lirik* <nome da música>
+   ┃ *Desc* : Pesquisar Letras de Músicas
    ┠──────────────╼
-   ┠≽ *${prefix}chord* <music_name>
-   ┃ *Desc* : Search Chord Music Lyrics
+   ┠≽ *${prefix}chord* <nome da música>
+   ┃ *Desc* : Pesquisar letras de músicas de acordes
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}`
 }

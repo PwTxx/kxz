@@ -25,19 +25,19 @@ const downloader = (prefix, botName, ownerName) => {
 ┠≽ *${prefix}bugreport* <text>
 ┃ *Desc* : Report Bug To Owner Bot
 ╿
-┷┯ *〈 DOWNLOADER 〉*
+┷┯ *〈 DOWNLOAD 〉*
    ╽
-   ┠≽ *${prefix}pinterest* <query>
-   ┃ *Desc* : Download Image From Pinterest
+   ┠≽ *${prefix}pinterest* <pesquisar>
+   ┃ *Desc* : Baixar imagem do Pinterest
    ┠──────────────╼
    ┠≽ *${prefix}ytmp3* <linkyt>
-   ┃ *Desc* : Download Youtube Video to Mp3
+   ┃ *Desc* : Baixar vídeo do Youtube para mp3
    ┠──────────────╼
    ┠≽ *${prefix}ytmp4* <linkyt>
-   ┃ *Desc* : Download Youtube Video
+   ┃ *Desc* : Baixe o vídeo do Youtube
    ┠──────────────╼
    ┠≽ *${prefix}tiktok* <linktiktok>
-   ┃ *Desc* : Download TikTok Video
+   ┃ *Desc* : Baixe o vídeo do TikTok
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}`
 }

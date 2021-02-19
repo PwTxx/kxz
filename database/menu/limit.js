@@ -25,16 +25,16 @@ const limit = (prefix, botName, ownerName) => {
 ┠≽ *${prefix}bugreport* <text>
 ┃ *Desc* : Report Bug To Owner Bot
 ╿
-┷┯ *〈 LIMIT 〉*
+┷┯ *〈 LIMITE 〉*
    ╽
-   ┠≽ *${prefix}limit*
-   ┃ *Desc* : Check Your Limit
+   ┠≽ *${prefix}limite*
+   ┃ *Desc* : Verifique o seu limite
    ┠──────────────╼
-   ┠≽ *${prefix}bal*
-   ┃ Check Your Money
+   ┠≽ *${prefix}saldo*
+   ┃ Verifique o seu dinheiro
    ┠──────────────╼
-   ┠≽ *${prefix}buylimit* <count>
-   ┃ *Desc* : Buy Limit
+   ┠≽ *${prefix}comprarl* <contar>
+   ┃ *Desc* : Comprar Limite
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}
 --------------------------------

@@ -27,26 +27,20 @@ const information = (prefix, botName, ownerName) => {
 ╿
 ┷┯ *〈 INFORMATION 〉*
    ╽
-   ┠≽ *${prefix}bahasa*
-   ┃ *Desc* : Submit Language Code
+   ┠≽ *${prefix}cdidioma*
+   ┃ *Desc* : Enviar código de idioma
    ┠──────────────╼
-   ┠≽ *${prefix}kodenegara*
-   ┃ *Desc* : Send Country Code
+   ┠≽ *${prefix}cdpaís*
+   ┃ *Desc* : Enviar código do país
    ┠──────────────╼
-   ┠≽ *${prefix}kbbi* <question>
-   ┃ *Desc* : Asking KBBI
+   ┠≽ *${prefix}infoclima* <área>
+   ┃ *Desc* : Enviar informações meteorológicas
    ┠──────────────╼
-   ┠≽ *${prefix}fakta*
-   ┃ *Desc* : Send a Random Fact
+   ┠≽ *${prefix}infoterremoto*
+   ┃ *Desc* : Enviando informações sobre terremotos
    ┠──────────────╼
-   ┠≽ *${prefix}infocuaca* <area>
-   ┃ *Desc* : Send Weather Information
-   ┠──────────────╼
-   ┠≽ *${prefix}infogempa*
-   ┃ *Desc* : Sending Earthquake Information
-   ┠──────────────╼
-   ┠≽ *${prefix}covidcountry* <country>
-   ┃ *Desc* : Sending Covid-19 Information
+   ┠≽ *${prefix}covidpaís* <país>
+   ┃ *Desc* : Envio de informações do Covid-19
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}`
 }

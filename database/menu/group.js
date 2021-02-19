@@ -25,70 +25,70 @@ const group = (prefix, botName, ownerName) => {
 ┠≽ *${prefix}bugreport* <text>
 ┃ *Desc* : Report Bug To Owner Bot
 ╿
-┷┯ *〈 GROUP 〉*
+┷┯ *〈 GRUPO 〉*
    ╽
-   ┠≽ *${prefix}opengc*
-   ┃ *Desc* : Opening Group
+   ┠≽ *${prefix}abrirgp*
+   ┃ *Desc* : Abrir Grupo
    ┠──────────────╼
-   ┠≽ *${prefix}closegc*
-   ┃ *Desc* : Closing the Group
+   ┠≽ *${prefix}fechargp*
+   ┃ *Desc* : Fechar Grupo
    ┠──────────────╼
-   ┠≽ *${prefix}promote* <@tag>
-   ┃ *Desc* : Promote People to be Admins Group
+   ┠≽ *${prefix}promover* <@tag>
+   ┃ *Desc* : Promova pessoas para serem grupo de administradores
    ┠──────────────╼
-   ┠≽ *${prefix}demote* <@tag>
-   ┃ *Desc* : Demote People to be Members Group
+   ┠≽ *${prefix}rebaixar* <@tag>
+   ┃ *Desc* : Rebaixar pessoas para serem membros Comum
    ┠──────────────╼
-   ┠≽ *${prefix}tagall*
-   ┃ *Desc* : Mention All Members
+   ┠≽ *${prefix}marcar*
+   ┃ *Desc* : Mencione todos os membros
    ┠──────────────╼
-   ┠≽ *${prefix}tagall2*
-   ┃ *Desc* : Mention All Members
+   ┠≽ *${prefix}marcar2*
+   ┃ *Desc* : Mencione todos os membros
    ┠──────────────╼
-   ┠≽ *${prefix}tagall3*
-   ┃ *Desc* : Mention All Members
+   ┠≽ *${prefix}marcar3*
+   ┃ *Desc* : Mencione todos os membros
    ┠──────────────╼
-   ┠≽ *${prefix}tagall4*
-   ┃ *Desc* : Mention All Members
+   ┠≽ *${prefix}marcar4*
+   ┃ *Desc* : Mencione todos os membros
    ┠──────────────╼
-   ┠≽ *${prefix}tagall5*
-   ┃ *Desc* : Mention All Members
+   ┠≽ *${prefix}marcar5*
+   ┃ *Desc* : Mencione todos os membros
    ┠──────────────╼
    ┠≽ *${prefix}add* <12542123926>
-   ┃ *Desc* : Add Members
+   ┃ *Desc* : Adicionar Membros
    ┠──────────────╼
-   ┠≽ *${prefix}kick* <@tag>
-   ┃ *Desc* : Kick Member Group
+   ┠≽ *${prefix}banir* <@tag>
+   ┃ *Desc* : Banir Membro Do Grupo
    ┠──────────────╼
-   ┠≽ *${prefix}listadmins*
-   ┃ *Desc* : Show List Group Admins
+   ┠≽ *${prefix}adminlist*
+   ┃ *Desc* : Mostrar Grupo de Lista de Adm
    ┠──────────────╼
-   ┠≽ *${prefix}linkgroup*
-   ┃ *Desc* : Show Group Link
+   ┠≽ *${prefix}linkgc*
+   ┃ *Desc* : Mostrar link do grupo
    ┠──────────────╼
    ┠≽ *${prefix}leave*
-   ┃ *Desc* : Tell the Bot to Leave the Group
+   ┃ *Desc* : Diga ao bot para sair do grupo
    ┠──────────────╼
-   ┠≽ *${prefix}welcome* <1/0>
-   ┃ *Desc* : Activating / Deactivating the Welcome Feature
+   ┠≽ *${prefix}bemvindo* <1/0>
+   ┃ *Desc* : Ativando / desativando o recurso de boas-vindas
    ┠──────────────╼
    ┠≽ *${prefix}nsfw* <1/0>
-   ┃ *Desc* : Activating / Deactivating the NSFW Feature
+   ┃ *Desc* : Ativando / desativando o recurso NSFW
    ┠──────────────╼
    ┠≽ *${prefix}delete*
-   ┃ *Desc* : Delete Bot Message
+   ┃ *Desc* : Excluir mensagem do bot
    ┠──────────────╼
    ┠≽ *${prefix}simih* <1/0>
-   ┃ *Desc* : Activating / Deactivating the Simih Feature
+   ┃ *Desc* : Ativando / desativando o recurso Simih
    ┠──────────────╼
    ┠≽ *${prefix}tagme*
-   ┃ *Desc* : Mention You
+   ┃ *Desc* : Mencionar você
    ┠──────────────╼
-   ┠≽ *${prefix}ownergroup*
-   ┃ *Desc* : Shows who the Group Owner is
+   ┠≽ *${prefix}donogrupo*
+   ┃ *Desc* : Mostra quem é o proprietário do grupo
    ┠──────────────╼
    ┠≽ *${prefix}antilinkgroup* <1/0>
-   ┃ *Desc* : Activating / Deactivating the Anti Link Feature
+   ┃ *Desc* : Ativando / Desativando o Recurso Anti-Link
    ╿ *${ownerName}*,
    ╰╼≽ *Developer © ${botName}`
 }
