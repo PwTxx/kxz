@@ -392,14 +392,14 @@ async function starts() {
                                 levelnol: '*NÍVEL DE IRMÃO AINDA* 0 °-°',
                                 error: {
                                 	    stick: '[❗] Falha, ocorreu um erro ao converter a imagem em um Sticker❌',
-                                        Iv: '❌ Link inválido ❌',
+                                        Iv: '❌ Link inválido ❌'
                                 },
                         	only: {
                         	        group: '[❗] Este comando só pode ser usado em grupos! ❌',
-                                        ownerG: `[❗] Este comando só pode ser usado pelo dono do grupo! ❌`,
+                                        ownerG: `[❗] MDSSS SÓ DONO DO GRUPO PODE USAR, VOCÊ NÃO É PORRA NENHUMA! ❌`,
                         	        admin: `[❗] KKKKKKKKKKKK, CALA A BOCA MEMBRO COMUM, ESSE COMANDO NÃO E PRA VOCÊ 🤬! ❌`,
                                         Badmin: `[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌`,
-                                        daftarB: `──「 AINDA NÃO REGISTRADO 」──\nOlá !\nVocê ainda não se registrou, vamos registrar primeiro... \n\nComando : ${prefix}register nome|idade\nExemplo : ${prefix}register Tiago|18`,
+                                        daftarB: `──「 AINDA NÃO REGISTRADO 」──\nOlá !\nVocê ainda não se registrou, vamos registrar primeiro... \n\nComando : ${prefix}cadastrar nome|idade\nExemplo : ${prefix}cadastrar Tiago|18`,
                                 }
                         }
                 	const apakah = ['Ya','Tidak']
@@ -1411,12 +1411,13 @@ async function starts() {
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BROADCAST 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 TRANSMISSÃO 」*\n\n${body.slice(4)}`)
 						}
-						reply('Suksess broadcast')
+						reply('Transmissão Com sucesso')
 					}
 					break
 					case 'bcgc':
+					case 'bcgrupo':
 					nzwa.updatePresence(from, Presence.composing) 
 					if (!isOwner) return reply(ind.ownerB())
 					if (args.length < 1) return reply('.......')
@@ -1424,14 +1425,14 @@ async function starts() {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await nzwa.downloadMediaMessage(encmedia)
 						for (let _ of groupMembers) {
-							nzwa.sendMessage(_.jid, buff, image, {caption: `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`})
+							nzwa.sendMessage(_.jid, buff, image, {caption: `*「 TRANSMISSÃO DE GUPO 」*\n*Grupo* : ${groupName}\n\n${body.slice(6)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of groupMembers) {
-							sendMess(_.jid, `*「 BC GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}`)
+							sendMess(_.jid, `*「 TRANSMISSÃO DE GRUPO 」*\n*Grupo* : ${groupName}\n\n${body.slice(6)}`)
 						}
-						reply('Suksess broadcast group')
+						reply('Grupo de transmissão de sucesso')
 					}
 					break
 				case 'alay':
@@ -1558,7 +1559,7 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marca O Safado(a) que você quer chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = 'Pedidos recebidos, emitidos :\n'
@@ -2521,9 +2522,10 @@ async function starts() {
 					}
 					break
 				case 'clone':
+				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(ind.ownerB())
-					if (args.length < 1) return reply('A tag alvo que você deseja clonar')
+					if (args.length < 1) return reply('marca a pessoa que você deseja clonar')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -2531,9 +2533,9 @@ async function starts() {
 						pp = await nzwa.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						nzwa.updateProfilePicture(botNumber, buffer)
-						mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
+						mentions(`Foto do perfil atualizada com sucesso usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
-						reply('Gagal om')
+						reply('Falha, Foto Muita Feia TmncKKKKKKKKK🤬')
 					}
 					break
                                 case 'pubglogo':
@@ -2611,16 +2613,16 @@ async function starts() {
                                 case 'evento':
                                         if (!isGroup) return reply(mess.only.group)
                                         if (!isOwner) return reply(ind.ownerB())
-                                        if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
+                                        if (args.length < 1) return reply('digite 1 para ativar')
                                         if (Number(args[0]) === 1) {
-                                                if (isEventon) return reply('*SUDAH AKTIF* !!!')
+                                                if (isEventon) return reply('*ATIVADO* !!!')
                                                 event.push(from)
                                                 fs.writeFileSync('./database/json/event.json', JSON.stringify(event))
-                                                reply('*「 SUCCSESS 」 Mengaktifkan EVENT di group ini*')
+                                                reply('*「 SUCESSO 」 Ativado EVENTO neste grupo*')
                                         } else if (Number(args[0]) === 0) {
                                                 event.splice(from, 1)
                                                 fs.writeFileSync('./database/json/event.json', JSON.stringify(event))
-                                                reply('*「 SUCCSESS 」 Menonaktifkan EVENT di group ini*')
+                                                reply('*「 SUCESSO 」 Desative EVENTO neste grupo*')
                                         } else {
                                                 reply(ind.satukos())
                                         }
@@ -2634,9 +2636,9 @@ async function starts() {
                                         const umurUser = q.substring(q.lastIndexOf('|') + 1)
                                         const serialUser = createSerial(20)
                                         if(isNaN(umurUser)) return await reply('A idade deve ser um número!!')
-                                        if (namaUser.length >= 30) return reply(`why is your name so long it's a name or a train`)
-                                        if (umurUser > 40) return reply(`your age is too  old maximum 40 years`)
-                                        if (umurUser < 12) return reply(`your age is too young minimum 12 years`)
+                                        if (namaUser.length >= 30) return reply(`por que seu nome é tão longo é um nome ou um trem`)
+                                        if (umurUser > 40) return reply(`sua idade é muito velha no máximo 40 anos`)
+                                        if (umurUser < 12) return reply(`sua idade é muito jovem, mínimo 12 anos`)
                                         veri = sender
                                         if (isGroup) {
                                                 addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
@@ -2765,7 +2767,7 @@ async function starts() {
 						antilink.push(from)
 						fs.writeFileSync('./database/json/antilink.json', JSON.stringify(antilink))
 						reply('Grupo anti-link ativado com sucesso neste grupo ✔️')
-						nzwa.sendMessage(from,`Perhatian kepada seluruh member anti link group aktif apabila anda mengirim link group anda akan di kick dari group`, text)
+						nzwa.sendMessage(from,`Atenção a todos os membros do grupo, Anti-link Foi Ativado se você enviar Qualquer Tipo De link, você será expulso do grupo`, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isantilink) return reply('O modo de grupo anti-link foi desativado')
 						var ini = anti.indexOf(from)
