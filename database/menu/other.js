@@ -25,11 +25,12 @@ const other = (prefix, botName, ownerName) => {
 ┠≽ *${prefix}bugreport* <texto>
 ┃ *Desc* : Reportar bug ao proprietário do bot
 ╿
-┷┯ *〈 OTHER 〉*
+┷┯ *〈 OUTROS 〉*
    ╽
    ┠≽ *${prefix}send*
    ┠≽ *${prefix}wame*
    ┠≽ *${prefix}trava*
+   ┠≽ *${prefix}destrava*
    ┠≽ *${prefix}qrcode* <texto>
    ┠≽ *${prefix}timer*
    ┠≽ *${prefix}fml*

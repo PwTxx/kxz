@@ -30,6 +30,9 @@ const search = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}wait
    ┃ *Desc* : Enviar Nome Anime e Cena Curta
    ┠──────────────╼
+   ┠≽ *${prefix}xvideos
+   ┃ *Desc* : Enviar Links De Video Adulto
+   ┠──────────────╼
    ┠≽ *${prefix}ytsearch <query>
    ┃ *Desc* : Pesquisar vídeo no YouTube
    ┠──────────────╼

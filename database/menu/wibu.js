@@ -30,6 +30,12 @@ const wibu = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}neonime*
    ┃ *Desc* : Pesquisar Neonime
    ┠──────────────╼
+   ┠≽ *${prefix}shota*
+   ┃ *Desc* : enviar figurinha de shota
+   ┠──────────────╼
+   ┠≽ *${prefix}lolifig*
+   ┃ *Desc* : Enviar figurinha de Loli
+   ┠──────────────╼
    ┠≽ *${prefix}pokemon*
    ┃ *Desc* : Imagem aleatória de Pokémon
    ┠──────────────╼
