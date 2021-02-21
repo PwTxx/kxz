@@ -30,6 +30,9 @@ const adult = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}blowgif*
    ┃ *Desc* : Enviar Gif De Blowgif
    ┠──────────────╼
+   ┠≽ *${prefix}pack*
+   ┃ *Desc* : Enviar Link De Um Pack Aleatório
+   ┠──────────────╼
    ┠≽ *${prefix}hentaifig*
    ┃ *Desc* : Enviar Figurinha De Hentai
    ┠──────────────╼

@@ -33,7 +33,7 @@ const owner = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}block* <@tag>
    ┃ *Desc* : Bloquear usuário
    ┠──────────────╼
-   ┠≽ *${prefix}unblock* <@tag>
+   ┠≽ *${prefix}desblock* <@tag>
    ┃ *Desc* : Desbloquear usuário
    ┠──────────────╼
    ┠≽ *${prefix}bc* <text>

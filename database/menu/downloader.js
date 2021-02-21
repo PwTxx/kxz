@@ -30,6 +30,9 @@ const downloader = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}pinterest* <pesquisar>
    ┃ *Desc* : Baixar imagem do Pinterest
    ┠──────────────╼
+   ┠≽ *${prefix}fb* <linkfb>
+   ┃ *Desc* : Baixar vídeo do Facebook
+   ┠──────────────╼
    ┠≽ *${prefix}ytmp3* <linkyt>
    ┃ *Desc* : Baixar vídeo do Youtube para mp3
    ┠──────────────╼

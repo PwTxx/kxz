@@ -27,14 +27,14 @@ const wibu = (prefix, botName, ownerName) => {
 ╿
 ┷┯ *〈 ANIME & ANIMAL 〉*
    ╽
-   ┠≽ *${prefix}neonime*
-   ┃ *Desc* : Pesquisar Neonime
+   ┠≽ *${prefix}itori*
+   ┃ *Desc* : Enviar Foto De Itori
    ┠──────────────╼
    ┠≽ *${prefix}shota*
-   ┃ *Desc* : enviar figurinha de shota
+   ┃ *Desc* : enviar Foto De Shota
    ┠──────────────╼
-   ┠≽ *${prefix}lolifig*
-   ┃ *Desc* : Enviar figurinha de Loli
+   ┠≽ *${prefix}miku*
+   ┃ *Desc* : Enviar foto de miku
    ┠──────────────╼
    ┠≽ *${prefix}pokemon*
    ┃ *Desc* : Imagem aleatória de Pokémon
@@ -42,11 +42,14 @@ const wibu = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}naruto*
    ┃ *Desc* : Imagem Aleatória de Naruto
    ┠──────────────╼
+   ┠≽ *${prefix}minato*
+   ┃ *Desc* : Imagem Aleatória de Minato
+   ┠──────────────╼
    ┠≽ *${prefix}dog*
    ┃ *Desc* : Imagem Aleatória de Cachorro
    ┠──────────────╼
-   ┠≽ *${prefix}animekiss*
-   ┃ *Desc* : Imagem Aleatória de Cachorro
+   ┠≽ *${prefix}rize*
+   ┃ *Desc* : Imagem Aleatória de rize
    ┠──────────────╼
    ┠≽ *${prefix}hinata*
    ┃ *Desc* : Imagem Aleatória de Hinata
@@ -69,8 +72,8 @@ const wibu = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}husbu*
    ┃ *Desc* : Imagem Aleatória De Husbu
    ┠──────────────╼
-   ┠≽ *${prefix}husbu2*
-   ┃ *Desc* : Imagem Aleatória De Husbu2
+   ┠≽ *${prefix}akira*
+   ┃ *Desc* : Imagem Aleatória De akira
    ┠──────────────╼
    ┠≽ *${prefix}wait*
    ┃ *Desc* : Enviar nome do anime e cena curta
