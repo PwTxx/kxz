@@ -333,7 +333,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Halo @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}*`
+				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -343,7 +343,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Sayonara @${num.split('@')[0]}ðŸ‘‹`
+				teks = `Adeus, Espero Que Não Volte Mais @${num.split('@')[0]}ðŸ‘‹`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -1444,6 +1444,24 @@ async function starts() {
 					buffer = await getBuffer(anu.result)
 					nzwa.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
 					break
+                    case 'fb':
+				    nzwa.updatePresence(from, Presence.composing)    
+				                        if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+				     reply(mess.wait)
+					if (args.length < 1) return reply('Urlnya mana gan?')
+					if (!isUrl(args[0]) && !args[0].includes('www.facebook.com')) return reply(mess.error.Iv)
+					reply(mess.wait)
+					anu = await fetchJson(`https://mhankbarbar.tech/api/epbe?url=${args[0]}&apiKey=${BarBarApi}`, {method: 'get'})
+					if (anu.error) return reply(anu.error)
+					nzwa.sendMessage(from, '[ ESPERA AÍ ] Sendo processado\n\nO link é apenas do Google, mano, então pode ser baixado', text, {quoted: mek})
+					efbe = `Title: *${anu.title}*\nSize: *${anu.filesize}\nDipublikasikan Pada: *${anu.published}*`
+					tefbe = await getBuffer(anu.thumb)
+					nzwa.sendMessage(from, tefbe, image, {quoted: mek, caption: efbe})
+					buffer = await getBuffer(anu.result)
+					nzwa.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: 'Nih Gan'})
+					await limitAdd(sender) 
+					break 
 				case 'trendtwit':
 					nzwa.updatePresence(from, Presence.composing) 
                                         if (!isRegister) return reply(mess.only.daftarB)
@@ -1667,20 +1685,52 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(ind.ownerB())
 					nzwa.blockUser (`${body.slice(8)}@c.us`, "add")
-					nzwa.sendMessage(from, `perintah Diterima, memblokir ${body.slice(8)}@c.us`, text)
+					nzwa.sendMessage(from, `Pedidos aceitos, bloqueado ${body.slice(8)}@c.us`, text)
+					break
+				case 'info':
+					me = nzwa.user
+					user.push(sender)
+					uptime = process.uptime()
+					teks = `➽ *Nome do Bot* : ${me.name}\n➽ *Dono Do Bot* : @${ownerNumber}\n➽ *prefix* : | ${prefix} |\n➽ *Total De Bloqueado* : ${blocked.length}\n➽ *Ativo Desde* : ${kyun(uptime)}\n\n➽ *Total de usuários* : 7895${user.length} User\n➽ *Instagram* : https://www.instagram.com/tiago.lve\n➽ *Tiago*`
+					buffer = await getBuffer(me.imgUrl)
+					nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
+					break
+				case 'unblock':
+				case 'desbloquear'
+                case 'desblock':
+                    nzwa.updatePresence(from, Presence.composing)
+					if (!isGroup) return reply(mess.only.group)
+					if (!isOwner) return reply(ind.ownerB)
+				    nzwa.blockUser (`${body.slice(9)}@c.us`, "remove")
+					nzwa.sendMessage(from, `Pedidos aceitos, desbloqueado ${body.slice(9)}@c.us`, text)
 					break  
 			     case 'xvideos':
 			                            if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
-              	    if (args.length < 1) return reply('Cadê o texto, mano?')
+			   reply(mess.wait)
+              	    if (args.length < 1) return reply('teksnya mana gan?')
                     anu = await fetchJson(`https://api.arugaz.my.id/api/media/xvideo/search?query=${body.slice(9)}`, {method: 'get'})
                     teks = `===============\n`
                     for (let b of anu.result) {
-                    teks += ` Título: ${b.title}\n Info: ${b.info}\n Link: ${b.link}\n===============\n`
+                    teks += `• Título: ${b.title}\n• Info: ${b.info}\n• Link: ${b.link}\n===============\n`
                     }
                     reply(teks.trim())
 			     	await limitAdd(sender) 
-			          break
+			    break
+			case 'pornhub':
+			                            if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+			   reply(mess.wait)
+              	    if (args.length < 1) return reply('onde esta o texto mano?')
+                    teks = body.slice(9)
+                    anu = await fetchJson(`https://api.arugaz.my.id/api/media/pornhub/search?query=${teks}`, {method: 'get'})
+                    teks = `===============\n`
+                    for (let bokep of anu.result) {
+                    teks += `Titulo: ${bokep.title}\nAktor: ${bokep.author}\nViewers: *${bokep.views}*\nDurasi: ${bokep.duration}\nLink: ${bokep.link}\n===============\n`
+                    }
+                    reply(teks.trim())
+			     	await limitAdd(sender) 
+			     	break 
                   case 'ytsearch':
 			                            if (!isRegister) return reply(mess.only.daftarB)
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -2489,6 +2539,61 @@ async function starts() {
 					vvibu = await getBuffer(anu.result)
 					nzwa.sendMessage(from, vvibu, image, {quoted: mek, caption: 'VVibu AbiZzzz :v'})
 					                    await limitAdd(sender)
+					break 
+				case 'minato':
+				                        if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Minato`, {method: 'get'})
+					min = JSON.parse(JSON.stringify(anu));
+					ato =  min[Math.floor(Math.random() * min.length)];
+					nye = await getBuffer(ato)
+					nzwa.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
+					                    await limitAdd(sender)
+					    break
+					case 'rize':
+				                        if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+rize`, {method: 'get'})
+					ri = JSON.parse(JSON.stringify(anu));
+					ze =  ri[Math.floor(Math.random() * ri.length)];
+					nye = await getBuffer(ze)
+					nzwa.sendMessage(from, nye, image, { caption: 'rize chan!!', quoted: mek })
+					                     await limitAdd(sender) 	
+					     break
+                     case 'itori':
+				                        if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+itori`, {method: 'get'})
+					it = JSON.parse(JSON.stringify(anu));
+					ori =  it[Math.floor(Math.random() * it.length)];
+					nye = await getBuffer(ori)
+					nzwa.sendMessage(from, nye, image, { caption: 'itori chan!!', quoted: mek })
+					                    await limitAdd(sender) 
+					break 
+				case 'akira':
+				                        if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+akira`, {method: 'get'})
+					ak = JSON.parse(JSON.stringify(anu));
+					ara =  ak[Math.floor(Math.random() * ak.length)];
+					nye = await getBuffer(ara)
+					nzwa.sendMessage(from, nye, image, { caption: 'akira chan!!', quoted: mek })
+					                     await limitAdd(sender) 
+					break 
+				case 'miku':
+				                        if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+miku`, {method: 'get'})
+					mi = JSON.parse(JSON.stringify(anu));
+					ku =  mi[Math.floor(Math.random() * mi.length)];
+					nye = await getBuffer(ku)
+					nzwa.sendMessage(from, nye, image, { caption: 'miku chan!!', quoted: mek })
+					                    await limitAdd(sender) 
                          break
                     case 'auau':
                     case 'cachorro':
@@ -2630,11 +2735,18 @@ async function starts() {
                                         await limitAdd(sender)      
                       break
 		      	case 'grupoinfo':
-                    nzwa.updatePresence(from, Presence.composing)
-                    if (!isGroup) return reply(mess.only.group)
-                    ppUrl = await client.getProfilePicture(from) // leave empty to get your own
-			        buffer = await getBuffer(ppUrl)
-		            nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: `*NOME* : ${groupName}\n*MEMBRO* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESCRIÇÃO* : ${groupDesc}`})
+                                        if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pusname))
+                nzwa.updatePresence(from, Presence.composing)
+                if (!isGroup) return reply(mess.only.group)
+                try {
+					ppUrl = await frhan.getProfilePicture(from)
+					} catch {
+					ppUrl = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+					}
+                reply(mess.wait) // leave empty to get your own
+			    buffer = await getBuffer(ppUrl)
+		        nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: `*NAME* : ${groupName}\n*MEMBER* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESK* : ${groupDesc}`})
 					break	
                                 case 'delete':
 					case 'del':
@@ -3258,6 +3370,22 @@ async function starts() {
                                         teks = ` *HAPPY MOD* \n  │\n  ├❑ Title : ${hepi.title} \n  ├❑ Size : ${hepi.size} \n  ├❑ Version : ${hepi.version} \n  ├❑ Root : ${hepi.root} \n  ├❑ Purchase : ${hepi.purchase} \n  ├❑ Price : ${hepi.price} \n  ├❑ Link : ${hepi.link} \n  └❑ Download : ${hepi.download} `
                                         nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: teks})
                                         await limitAdd(sender)
+                                        break 
+				case 'randombokep':
+				case 'pack':
+				case 'porno':
+				                        if (!isRegister) return reply(mess.only.daftarB)
+                                        if (isLimit(sender)) return reply(ind.limitend(pushname))
+                  nzwa.updatePresence(from, Presence.composing)
+				 data = fs.readFileSync('./src/18.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                 randBokep = await getBuffer(randKey.image)
+                 reply(mess.wait)
+                 randTeks = randKey.teks
+                 nzwa.sendMessage(from, randBokep, image, {quoted: mek, caption: randTeks})
+				 await limitAdd(sender) 
                                         break
                                 case 'jadwalTV':
                                         mb = body.slice(10)
