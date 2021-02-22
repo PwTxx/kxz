@@ -30,6 +30,9 @@ const wibu = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}itori*
    ┃ *Desc* : Enviar Foto De Itori
    ┠──────────────╼
+   ┠≽ *${prefix}wallpaperanime*
+   ┃ *Desc* : Enviar Foto De Itori
+   ┠──────────────╼
    ┠≽ *${prefix}shota*
    ┃ *Desc* : enviar Foto De Shota
    ┠──────────────╼
@@ -66,8 +69,8 @@ const wibu = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}waifu*
    ┃ *Desc* : Imagem Aleatória De Waifu
    ┠──────────────╼
-   ┠≽ *${prefix}randomanime*
-   ┃ *Desc* : Imagem Aleatória De Waifu
+   ┠≽ *${prefix}goku*
+   ┃ *Desc* : Imagem Aleatória De Goku
    ┠──────────────╼
    ┠≽ *${prefix}husbu*
    ┃ *Desc* : Imagem Aleatória De Husbu

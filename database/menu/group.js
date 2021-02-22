@@ -93,6 +93,12 @@ const group = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}antilinkgroup* <1/0>
    ┃ *Desc* : Ativando / Desativando o Recurso Anti-Link
    ┠──────────────╼
+   ┠≽ *${prefix}antipalavrão* <ativar/desativar>
+   ┃ *Desc* : Ativando / Desativando o Recurso Anti Palavrão
+   ┠──────────────╼
+   ┠≽ *${prefix}listpalavrão*
+   ┃ *Desc* : Mostrar uma lista de palavrões
+   ┠──────────────╼
    ┠≽ *${prefix}antiracismo* <on/off>
    ┃ *Desc* : Ativando / Desativando o Recurso Anti-Racismo
    ╿ *${ownerName}*,

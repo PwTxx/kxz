@@ -42,6 +42,11 @@ const owner = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}clone* <@tag>
    ┃ *Desc* : Clonar perfil de outros membros
    ┠──────────────╼
+   ┠≽ *${prefix}addpalavrão* <palavra>
+   ┃ *Desc* : Add Palavrão 
+   ┠──────────────╼
+   ┠≽ *${prefix}delpalavrão* <palavrão>
+   ┃ *Desc* : apagar palavrão 
    ┠≽ *${prefix}clearall
    ┃ *Desc* : Limpar todo o bate-papo
    ╿ *${ownerName}*,

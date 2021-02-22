@@ -27,26 +27,26 @@ const adult = (prefix, botName, ownerName) => {
 ╿
 ┷┯ *〈 18+ 〉*
    ╽
-   ┠≽ *${prefix}blowgif*
-   ┃ *Desc* : Enviar Gif De Blowgif
+   ┠≽ *${prefix}nsfwloli*
+   ┃ *Desc* : Enviar Foto De Nsfwloli
    ┠──────────────╼
    ┠≽ *${prefix}pack*
    ┃ *Desc* : Enviar Link De Um Pack Aleatório
    ┠──────────────╼
-   ┠≽ *${prefix}hentaifig*
-   ┃ *Desc* : Enviar Figurinha De Hentai
+   ┠≽ *${prefix}anal*
+   ┃ *Desc* : Enviar gif de Anal
    ┠──────────────╼
    ┠≽ *${prefix}nekonime*
    ┃ *Desc* : Enviar Foto De Nekonime
    ┠──────────────╼
-   ┠≽ *${prefix}nsfwneko*
-   ┃ *Desc* : Enviar Foto De Nsfwneko
+   ┠≽ *${prefix}nsfwpussy*
+   ┃ *Desc* : Enviar Foto De Nsfwpussy
    ┠──────────────╼
-   ┠≽ *${prefix}nekofig*
-   ┃ *Desc* : Enviar Figurinha De Neko
+   ┠≽ *${prefix}nsfwboobs*
+   ┃ *Desc* : Enviar Figurinha De Nsfwboobs
    ┠──────────────╼
-   ┠≽ *${prefix}neko*
-   ┃ *Desc* : Enviar foto de neko
+   ┠≽ *${prefix}ero*
+   ┃ *Desc* : Enviar foto de Ero
    ┠──────────────╼
    ┠≽ *${prefix}randomhentai*
    ┃ *Desc* : Envio de imagem aleatória Hentai

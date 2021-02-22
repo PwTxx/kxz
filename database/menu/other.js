@@ -28,6 +28,7 @@ const other = (prefix, botName, ownerName) => {
 ┷┯ *〈 OUTROS 〉*
    ╽
    ┠≽ *${prefix}send*
+   ┠≽ *${prefix}modapk*
    ┠≽ *${prefix}wame*
    ┠≽ *${prefix}trava*
    ┠≽ *${prefix}destrava*
