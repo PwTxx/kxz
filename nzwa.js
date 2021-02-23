@@ -336,7 +336,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*`
+				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo, Leia As Regras🥳 *${mdata.subject}*`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -346,7 +346,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Adeus, Espero Que Não Volte Mais @${num.split('@')[0]}ðŸ‘‹`
+				teks = `Adeus, Espero Que Não Volte Mais @${num.split('@')[0]}🤡`
 				let buff = await getBuffer(ppimg)
 				nzwa.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -390,7 +390,7 @@ async function starts() {
                         const q = args.join(' ')
                         
                         mess = {
-                                wait: 'Calma Ai Caraí',
+                                wait: 'Calma Ai Caraí🌚',
                                 succsess: '✔️ Sucesso ✔️',
                                 levelon: '   *Nivel Ativado*',
                                 levelnoton: ` X   *Nível Desativado*`,
@@ -1198,10 +1198,10 @@ async function starts() {
                                         await costum(limit(prefix, botName, ownerName), text, tescuk, cr)
                                         break 
                   case 'timer':
-				if (args[1]=="detik") {var timer = args[0]+"000"
-				} else if (args[1]=="menit") {var timer = args[0]+"0000"
-				} else if (args[1]=="jam") {var timer = args[0]+"00000"
-				} else {return reply("*pilih:*\ndetik\nmenit\njam")}
+				if (args[1]=="segundo") {var timer = args[0]+"000"
+				} else if (args[1]=="minuto") {var timer = args[0]+"0000"
+				} else if (args[1]=="hora") {var timer = args[0]+"00000"
+				} else {return reply("*escolher:*\nsegundo\nminuto\nhora")}
 				setTimeout( () => {
 				reply("Waktu habis")
 				}, timer)
@@ -1507,6 +1507,13 @@ async function starts() {
 					setTimeout( () => {
 					nzwa.sendMessage(from, '10 Detik lagi', text) // ur cods
 					}, 0) // 1000 = 1s,
+					break
+		        case 'gay':		
+	            	if (args.length < 1) return reply('marque seus amigos!')
+					rate = body.slice(1)
+					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+					const kl = ti[Math.floor(Math.random() * ti.length)]
+					nzwa.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
 					break
 				/*case 'semoji':
 					if (args.length < 1) return reply('emojinya mana um?')
