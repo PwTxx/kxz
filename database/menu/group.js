@@ -39,9 +39,6 @@ const group = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}rebaixar* <@tag>
    ┃ *Desc* : Rebaixar pessoas para serem membros Comum
    ┠──────────────╼
-   ┠≽ *${prefix}grupoinfo*
-   ┃ *Desc* : Mostrar Informações Do Grupo
-   ┠──────────────╼
    ┠≽ *${prefix}marcar*
    ┃ *Desc* : Mencione todos os membros
    ┠──────────────╼
@@ -87,17 +84,14 @@ const group = (prefix, botName, ownerName) => {
    ┠≽ *${prefix}tagme*
    ┃ *Desc* : Mencionar você
    ┠──────────────╼
+   ┠≽ *${prefix}gay*
+   ┃ *Desc* : Ver Porcentagem De Gay
+   ┠──────────────╼
    ┠≽ *${prefix}donogrupo*
    ┃ *Desc* : Mostra quem é o proprietário do grupo
    ┠──────────────╼
    ┠≽ *${prefix}antilinkgroup* <1/0>
    ┃ *Desc* : Ativando / Desativando o Recurso Anti-Link
-   ┠──────────────╼
-   ┠≽ *${prefix}antipalavrão* <ativar/desativar>
-   ┃ *Desc* : Ativando / Desativando o Recurso Anti Palavrão
-   ┠──────────────╼
-   ┠≽ *${prefix}listpalavrão*
-   ┃ *Desc* : Mostrar uma lista de palavrões
    ┠──────────────╼
    ┠≽ *${prefix}antiracismo* <on/off>
    ┃ *Desc* : Ativando / Desativando o Recurso Anti-Racismo
