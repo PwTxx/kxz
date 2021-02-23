@@ -1203,7 +1203,7 @@ async function starts() {
 				} else if (args[1]=="hora") {var timer = args[0]+"00000"
 				} else {return reply("*escolher:*\nsegundo\nminuto\nhora")}
 				setTimeout( () => {
-				reply("Waktu habis")
+				reply("O tempo acabou")
 				}, timer)
 				break
                 case 'bahasa':
@@ -1278,7 +1278,7 @@ async function starts() {
 						mentions(teks, mentioned, true)
 						nzwa.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`Perintah di terima, menambah jabatan sebagai admin : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`Pedido recebido, adicionando posição como administrador : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						nzwa.groupMakeAdmin(from, mentioned)
 					}
 					break
@@ -1321,7 +1321,7 @@ async function starts() {
                 case 'creator':
                 case 'dono':
                   nzwa.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-               nzwa.sendMessage(from, 'Meu Dono, GOSTOSO ELE',MessageType.text, { quoted: mek} )
+               nzwa.sendMessage(from, 'Meu Dono, Qualquer Dúvida Chama Ele',MessageType.text, { quoted: mek} )
                 break
 	case 'hidetag':
                 nzwa.updatePresence(from, Presence.composing) 
@@ -1343,7 +1343,7 @@ async function starts() {
                break
                                 case 'tiktokstalk':
 					try {
-						if (args.length < 1) return nzwa.sendMessage(from, 'Usernamenya mana kak? ', text, {quoted: mek})
+						if (args.length < 1) return nzwa.sendMessage(from, 'Onde está o nome de usuário, mana? ', text, {quoted: mek})
                                                 if (!isRegister) return reply(mess.only.daftarB)
                                                 if (isLimit(sender)) return reply(ind.limitend(pusname))
 						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
@@ -1564,7 +1564,7 @@ async function starts() {
                if (!isRegister) return reply(mess.only.daftarB)
                if (isLimit(sender)) return reply(ind.limitend(pusname))
                if (data.error) return reply(data.error)
-                 infomp3 = `*Lagu Ditemukan!!!*\nJudul : ${data.result.judul}\nAlbum : ${data.result.album}\nDipublikasi : ${data.result.dipublikasi}`
+                 infomp3 = `*Música encontrada!!!*\nTitulo : ${data.result.judul}\nAlbum : ${data.result.album}\nPublicado : ${data.result.dipublikasi}`
                 buffer = await getBuffer(data.result.thumb)
                 lagu = await getBuffer(data.result.mp3)
                 nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -2936,7 +2936,7 @@ async function starts() {
                 const userXp = getLevelingXp(sender)
                 if (userLevel === undefined && userXp === undefined) return reply(mess.levelnol)
                 sem = sender.replace('@s.whatsapp.net','')
-                resul = ` *LEVEL*\n  ├❑ *Name* : ${sem}\n  ├❑ *User XP* : ${userXp}\n  └❑ *User Level* : ${userLevel}`
+                resul = ` *LEVEL*\n  ├❑ *Nome* : ${sem}\n  ├❑ *XP Do Usuário* : ${userXp}\n  └❑ *Nivel Do Usuário* : ${userLevel}`
                nzwa.sendMessage(from, resul, text, { quoted: mek})
                 .catch(async (err) => {
                         console.error(err)
@@ -2998,7 +2998,7 @@ async function starts() {
                                         const latensi = speed() - timestamp
                                         nzwa.updatePresence(from, Presence.composing) 
 				        uptime = process.uptime()
-                                        nzwa.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Second_*\nDevice: *Black Shark 3*\nRAM: *8/128*\nData: *Smartfren*\nJaringan: *4G*\nStatus: *Di Charger*`, text, { quoted: mek})
+                                        nzwa.sendMessage(from, `Velocidade: *${latensi.toFixed(4)} _Segundo_*\nDevice: *Android*\nRAM: *8/128*\nData: *Smartfren*\nRede: *WIFI*\nStatus: *Online*`, text, { quoted: mek})
                                         break
                                 case 'neonlogo':
                                         var gh = body.slice(9)
@@ -3416,8 +3416,8 @@ async function starts() {
                                         const serialUser = createSerial(20)
                                         if(isNaN(umurUser)) return await reply('A idade deve ser um número!!')
                                         if (namaUser.length >= 30) return reply(`por que seu nome é tão longo é um nome ou um trem`)
-                                        if (umurUser > 40) return reply(`sua idade é muito velha no máximo 40 anos`)
-                                        if (umurUser < 12) return reply(`sua idade é muito jovem, mínimo 12 anos`)
+                                        if (umurUser > 60) return reply(`sua idade é muito velha no máximo 60 anos`)
+                                        if (umurUser < 9) return reply(`sua idade é muito jovem, mínimo 9 anos`)
                                         veri = sender
                                         if (isGroup) {
                                                 addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
@@ -3514,7 +3514,7 @@ async function starts() {
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${toby}&apikey=BotWeA`, {method: 'get'})
                                         hepi = anu.result[0]
                                         buffer = await getBuffer(hepi.image)
-                                        teks = ` *HAPPY MOD* \n  │\n  ├❑ Title : ${hepi.title} \n  ├❑ Size : ${hepi.size} \n  ├❑ Version : ${hepi.version} \n  ├❑ Root : ${hepi.root} \n  ├❑ Purchase : ${hepi.purchase} \n  ├❑ Price : ${hepi.price} \n  ├❑ Link : ${hepi.link} \n  └❑ Download : ${hepi.download} `
+                                        teks = ` *HAPPY MOD* \n  │\n  ├❑ Titulo : ${hepi.title} \n  ├❑ Tamanho : ${hepi.size} \n  ├❑ Versão : ${hepi.version} \n  ├❑ Root : ${hepi.root} \n  ├❑ Compra : ${hepi.purchase} \n  ├❑ Preço : ${hepi.price} \n  ├❑ Link : ${hepi.link} \n  └❑ Download : ${hepi.download} `
                                         nzwa.sendMessage(from, buffer, image, {quoted: mek, caption: teks})
                                         await limitAdd(sender)
                                         break 
