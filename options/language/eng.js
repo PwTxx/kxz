@@ -1,103 +1,103 @@
 exports.wait = () => {
-        return `⌛ Sendo processado ⌛`
+        return `⌛ Being Processed ⌛`
 }
 
 exports.timeEnd = () => {
-        return `O tempo acabou`
+        return `Time has run out`
 }
 
 exports.succsess = () => {
-        return `✔️ Sucesso ✔️`
+        return `✔️ Succsess ✔️`
 }
 
 exports.levelon = () => {
-        return `❬ ✔ ❭ *Nível Ativado*`
+        return `❬ ✔ ❭ *enable leveling*`
 }
 
 exports.levelnoton = () => {
-        return `❬ X ❭  *Nivel Desativado*`
+        return `❬ X ❭  *disable leveling*`
 }
 
 exports.levelnol = () => {
-        return `*SEU NÍVEL AINDA* 0 °-°`
+        return `*YOUR LEVEL STILL* 0 °-°`
 }
 
 exports.stick = () => {
-        return `[❗] Falha, ocorreu um erro ao converter a imagem em um Sticker ❌`
+        return `[❗] Failed, an error occurred while converting the image to a sticker ❌`
 }
 
 exports.Iv = () => {
-        return `❌ Link inválido ❌`
+        return `❌ Invalid link ❌`
 }
 
 exports.group = () => {
-        return `[❗] Este comando só pode ser usado em grupos! ❌`
+        return `[❗] This command can only be used in groups! ❌`
 }
 
 exports.ownerG = () => {
-        return `[❗] Este comando só pode ser usado pelo proprietário do grupo! ❌`
+        return `[❗] This command can only be used by the owner group! ❌`
 }
 
 exports.ownerB = () => {
-        return `[❗] Este comando só pode ser usado pelo proprietário do bot! ❌`
+        return `[❗] This command can only be used by the owner bot! ❌`
 }
 
 exports.admin = () => {
-        return `[❗] KKKKKKKKKKKK, MEMBRO COMUM QUERENDO USAR ESSE COMANDO🤡! ❌`
+        return `[❗] This command can only be used by group admins! ❌`
 }
 
 exports.Badmin = () => {
-        return `[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌`
+        return `[❗] This command can only be used when the bot becomes admin! ❌`
 }
 
 exports.daftarB = (prefix) => {
-        return `──「 NÃO REGISTRADO 」──\nOlá !\nVocê ainda não se registrou, vamos registrar primeiro... \n\nComando : ${prefix}register nome|idade\nExamplo : ${prefix}register Tiago|18`
+        return `──「 NOT YET REGISTERED 」──\nHello Sis !\nYou haven't registered yet, let's register first... \n\nCommand : ${prefix}register nama|umur\nExample : ${prefix}register Nazwa|16`
 }
 
 exports.daftarD = () => {
-        return `*「 JÁ REGISTRADO 」*\n\n*você se registrou no banco de dados do bot*`
+        return `*「 ALREADY REGISTER 」*\n\n*you have registered in the bot database*`
 }
 
 exports.wrongf = () => {
-        return`*Formato incorreto / texto em branco*`
+        return`*Incorrect format / blank text*`
 }
 
 exports.clears = () => {
-        return`*limpar todo o sucesso*`
+        return`*clear all Success*`
 }
 
 exports.pc = () => {
-        return`*「 CADASTRO 」*\n\nif você não entendeu a mensagem. significa que você não salvou o número do seu bot*`
+        return`*「 REGISTRATION 」*\n\nif you haven't got the message. means you haven't saved your bot number*`
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-        return`*「 DADOS DO REGISTRO 」*\n\nvocê se registrou com os dados \n\n◪ *DADOS* \n  │ \n  ├─ ❏ Nome : ${namaUser} \n  ├─ ❏ Número : wa.me/${sender.split("@")[0]} \n  ├─ ❏ Idade : ${umurUser} \n  ├─ ❏ Hora do Registro : ${time} \n  │ \n └─ ❏ NS : ${serialUser} \n\n ❏ NOTE : NÃO ESQUEÇA ESTE NÚMERO PORQUE É IMPORTANTE :v`
+        return`*「 REGISTER DATA 」*\n\nyou have registered with the data \n\n◪ *DATA* \n  │ \n  ├─ ❏ Name : ${namaUser} \n  ├─ ❏ Number : wa.me/${sender.split("@")[0]} \n  ├─ ❏ Age : ${umurUser} \n  ├─ ❏ Register Time : ${time} \n  │ \n └─ ❏ NS : ${serialUser} \n\n ❏ NOTE : DO NOT FORGET THIS NUMBER BECAUSE IT IS IMPORTANT :v`
 }
 
 exports.cmdnf = (prefix, command) => {
-        return`comando *${prefix}${command}* não encontrado \ tente escrever *${prefix}menu*`
+        return`command *${prefix}${command}* not found \ try to write *${prefix}menu*`
 }
 
 exports.owneresce = (pushname) => {
-        return`*Desculpe, mas ${pushname} não o script do dono*`
+        return`*sorry but ${pushname} not the owner script*`
 }
 
 exports.limitend = (pushname) => {
-        return`*Desculpe ${pushname} O limite de hoje Acabou*\n*O limite é zerado a cada 00:00 horas*`
+        return`*sorry ${pushname} Today's limit is up*\n*The limit is reset every 00:00 hours*`
 }
 
 exports.limitcount = (limitCounts) => {
         return`
-*「 CONTADOR DE LIMITE 」*
-o resto do seu limite : ${limitCounts}
+*「 LIMIT COUNT 」*
+the rest of your limit : ${limitCounts}
 
-NOTE : para chegar ao limite. pode passar de nível ou limite de capacidade`
+NOTE : to get to the limit. can pass level up or buylimit`
 }
 
 exports.satukos = () => {
-        return`*Adicione os parâmetros 1 (ativar) ou 0 (desativar)`
+        return`*Add parameters 1 (enable) or 0 (disable)`
 }
 
 exports.uangkau = (pushname, sender, uangkau) => {
-        return`◪ *SALDO*\n  ❏ *Nome* : ${pushname}\n  ❏ *Número* : ${sender.split("@")[0]}\n  ❏ *Dinheiro* : ${uangkau}`
+        return`◪ *BALANCE*\n  ❏ *Name* : ${pushname}\n  ❏ *Number* : ${sender.split("@")[0]}\n  ❏ *Money* : ${uangkau}`
 }

@@ -1,5 +1,5 @@
 exports.wait = () => {
-        return `🤬 Em processo, Aguarde Um Pouco🤬 `
+        return `Em processo, Aguarde`
 }
 
 exports.timeEnd = () => {
@@ -11,11 +11,11 @@ exports.succsess = () => {
 }
 
 exports.levelon = () => {
-        return `❬ ✔ ❭ *Nivel está ativo*`
+        return `❬ ✔ ❭ *nivel está ativo*`
 }
 
 exports.levelnoton = () => {
-        return `❬ X ❭  *Nivel Desativado*`
+        return `❬ X ❭  *desativado nivel*`
 }
 
 exports.levelnol = () => {
@@ -23,7 +23,7 @@ exports.levelnol = () => {
 }
 
 exports.stick = () => {
-        return `[❗] Falha, ocorreu um erro ao converter a imagem em um Sticker ❌`
+        return `[❗] Falha, ocorreu um erro ao converter a imagem em um adesivo ❌`
 }
 
 exports.Iv = () => {
@@ -35,15 +35,15 @@ exports.group = () => {
 }
 
 exports.ownerG = () => {
-        return `[❗] Este comando só pode ser usado pelo proprietário do grupo! ❌`
+        return `[❗] Este comando só pode ser usado pelo dono do grupo! ❌`
 }
 
 exports.ownerB = () => {
-        return `[❗] ESSA É BOA USUÁRIO COMUM TENTANDO USAR COMANDO DO MEU DONO GOSTOSO🤡🤬🤬! ❌`
+        return `[❗] Este comando só pode ser usado pelo dono do bot! ❌`
 }
 
 exports.admin = () => {
-        return `[❗] KKKKKKKKKKKKK MDS, VOCÊ NÃO PODE USA ESSE COMANDO PORRA🤬! ❌`
+        return `[❗] VSFD MEMBRO COMUM, VAI PROCURAR OQ FAZER, COMANDO NÃO É PRA VOCÊ 😘! ❌`
 }
 
 exports.Badmin = () => {
@@ -51,7 +51,7 @@ exports.Badmin = () => {
 }
 
 exports.daftarB = (prefix) => {
-        return `──「 NÃO REGISTRADO 」──\nOlá !\nVocê ainda não se registrou, vamos registrar primeiro... \n\nComando : ${prefix}register none|idade\nExemplo : ${prefix}register Tiago|18`
+        return `──「 AINDA NÃO REGISTRADO 」──\nSalve !\nVocê ainda não se registrou, vamos registrar primeiro... \n\nComando : ${prefix}registrar nome|idade\nExemplo : ${prefix}registrar Tiago|18`
 }
 
 exports.daftarD = () => {
@@ -71,15 +71,15 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-        return`*「 DADOS DO CADASTRO 」*\n\nvocê se registrou com os dados \n\n◪ *DADOS* \n  │ \n  ├─ ❏ Nome : ${namaUser} \n  ├─ ❏ Número : wa.me/${sender.split("@")[0]} \n  ├─ ❏ Idade : ${umurUser} \n  ├─ ❏ Hora Do Cadastro : ${time} \n  │ \n └─ ❏ NS : ${serialUser} \n\n ❏ NOTE : \n NÃO ESQUEÇA ESTE NÚMERO PORQUE É IMPORTANTE: v`
+        return`*「 DADOS DO CADASTRO 」*\n\nvocê se registrou com os dados \n\n◪ *DADOS* \n  │ \n  ├─ ❏ Nome : ${namaUser} \n  ├─ ❏ Número : wa.me/${sender.split("@")[0]} \n  ├─ ❏ Idade : ${umurUser} \n  ├─ ❏ Hora Do Registro : ${time} \n  │ \n └─ ❏ NS : ${serialUser} \n\n ❏ NOTA : \n NÃO ESQUEÇA ESTE NÚMERO PORQUE É IMPORTANTE: v`
 }
 
 exports.cmdnf = (prefix, command) => {
-        return`comando *${prefix}${command}* não encontrado \ tente escrever *${prefix}menu*`
+        return`comando *${prefix}${command}* não encontrado\tente escrever *${prefix}menu*`
 }
 
 exports.owneresce = (pushname) => {
-        return`*Desculpe, mas ${pushname} script do proprietário do bot*`
+        return`*Desculpe, mas ${pushname} script do proprietário*`
 }
 
 exports.limitend = (pushname) => {
