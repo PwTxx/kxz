@@ -36,7 +36,7 @@
 </details>
 </div>
 
-## Made By
+## Made With 💜 By
 
 <p align="center">
     <a href="https://github.com/paritsod"><img title="Paritsod" src="https://avatars.githubusercontent.com/u/77239531?s=400&v=4" width="128"></a>
@@ -69,7 +69,7 @@
 
 ---
 
-### How To Editing option.json
+### How To Editing [option.json](https://github.com/NazwaS/termux-whatsapp-bot/blob/main/options/option.json)
 
 ```bash
 {
@@ -187,7 +187,7 @@ Follow The Steps Below!
 > Ctrl + C
 ```
 
-## 120+ Features
+## Features
 
 | Unique Features | YES
 | :---------------------------------------------: | :-----------: |
@@ -297,6 +297,8 @@ Follow The Steps Below!
 | Simih|✅|
 | Tag Me|✅|
 | Anti Link Group|✅|
+| Anti Badword Group|✅|
+| Show Badword List|✅|
 
 | SOUND | YES |
 | :-----------------: | :-------: |
@@ -367,6 +369,8 @@ Follow The Steps Below!
 | Group Broadcast|✅|
 | Clear All Chat|✅|
 | Clone Photo Profile Bot|✅|
+| Add Badword|✅|
+| Delete Badword|✅|
 
 | OTHER | YES |
 | :-----------------: | :-------: |
