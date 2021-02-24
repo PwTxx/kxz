@@ -18,7 +18,6 @@ const help = (pushname, prefix, botName, ownerName, reqXp, uangku) => {
 ┷┯ *〈 MENU 〉*
    ┠≽ *${prefix}stickermenu*
    ┠≽ *${prefix}procurarmenu*
-   ┠≽ *${prefix}educationmenu*
    ┠≽ *${prefix}downloadmenu*
    ┠≽ *${prefix}mememenu*
    ┠≽ *${prefix}grupomenu*
