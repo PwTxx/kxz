@@ -1,10 +1,10 @@
 {
-    "botName": "GG BOT",
+    "botName": "GG",
     "ownerName": "TIAGO",
     "BarBarKey": "YOUR_APIKEY",
     "ownerNumbers": "553398091185@s.whatsapp.net",
     "languages": "ind",
     "botPrefix": "#",
     "memberLimitss": "1",
-    "userDefaultLimit": "10000"
+    "userDefaultLimit": "1000000"
 }
