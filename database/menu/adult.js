@@ -27,9 +27,7 @@ const adult = (prefix, botName, ownerName) => {
 ╿
 ┷┯ *〈 18+ 〉*
    ╽
-   ┠≽ *${prefix}pack*
-   ┃ *Desc* : Enviar Link De Um Pack Aleatório
-   ┠──────────────╼
+   ╽
    ┠≽ *${prefix}nekonime*
    ┃ *Desc* : Enviar Foto De Nekonime
    ┠──────────────╼
